@@ -27,7 +27,8 @@ header{
     height:100%;  
     object-fit: cover;
     opacity: 0.6; 
-    animation: zoom 25s ;
+    animation: zoom 20s  alternate-reverse infinite ;
+    transition:  all ease-in-out 0.98s;
 }
 @keyframes zoom {
     0%{
@@ -90,8 +91,9 @@ header{
 
 .banner button:hover{
     color:#a293e5;
-    transform: scale(.98);
+    transform: scale(1);
     transition: all ease 0.7;
+    
 }
  
 @keyframes moveBanner {

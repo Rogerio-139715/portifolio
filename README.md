@@ -7,6 +7,6 @@ O controle das tarefas desse projeto será realizado no GITHUB
 
 ## Icones
 
-:baby :nova funcionalidade
-:zap : atualização
-: checkered-flag : release
+:baby: nova funcionalidade
+:zap: atualização
+:checkered-flag: release
