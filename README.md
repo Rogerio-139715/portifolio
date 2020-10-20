@@ -7,6 +7,13 @@ O controle das tarefas desse projeto será realizado no GITHUB
 
 ## Icones
 
-:baby: nova funcionalidade
-:zap: atualização
-:checkered-flag: release
+- :package: nova funcionalidade
+- :zap: atualização
+- :beetle: correção do bug
+- :checkered_flag: release
+
+## Novos ajustes css
+
+Ajustes no button ,efeito hover...
+
+##
