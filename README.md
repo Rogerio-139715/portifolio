@@ -31,6 +31,6 @@ Ajustes no button ,efeito hover...
 
 ## Contato
 
-- :packge: contao ok 
+- :package: contao ok 
 - :zap:  ok
 - :checkered_flag: release
