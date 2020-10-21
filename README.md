@@ -28,3 +28,9 @@ Ajustes no button ,efeito hover...
 - :zap:  atualização
 - :beetle: Bug do menu resolvido via css (z-index:99;) sobreposição do menu
 - :checkered_flag: release
+
+## Contato
+
+- :packge: contao ok 
+- :zap:  ok
+- :checkered_flag: release
