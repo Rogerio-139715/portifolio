@@ -16,4 +16,8 @@ O controle das tarefas desse projeto será realizado no GITHUB
 
 Ajustes no button ,efeito hover...
 
-##
+## Conhecimentos
+
+- :package: conhecimentos ok
+- :zap: atualização
+- :checked_flag: release
