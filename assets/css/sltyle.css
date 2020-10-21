@@ -187,6 +187,7 @@ header{
     background-color: #eef4f5;
     top:0;
     right: -20rem;
+    z-index: 99;
     transition: all ease .9s;
 }
 .show-menu .sidebar {
@@ -330,6 +331,101 @@ header{
         width: 337px;
         height: 320px;
         color: #fff;
+        border: none;
     }
+
+    /* Projetos section*/
+
+    .projetos{
+      display:flex;
+      justify-content: space-evenly;
+
+    }
+
+    .cards{
+        width: 18rem;
+        height: 25rem;
+        position: relative;
+    }
+
+    .card-img-wrapper{
+        width: 100%;
+        height:100%;
+        background-color: #2e2d2d;
+        border-radius:.5rem;
+        
+    }
+
+    .card-img-wrapper img{
+        object-fit: cover;
+        width: 100%;
+        height:100%;
+        border-radius: .5rem;
+        opacity: .6;
+        transition: opacity .4s;
+    }
+
+    .cards:hover .card-img-wrapper img{
+      opacity: .3;
+    }
+
+    .card-info{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;;
+        bottom: 0;
+        padding:2rem;
+        text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
+        transition: all ease-in-out .4s;
+    }
+
+    .card-info h2{
+        font-family: var(--font-primary);
+        font-size:2rem;
+        font-weight:500;
+        color:#eee;
+    }
+
+    .card-info h3{
+        font-family: var(--font-secundary);
+        font-weight:bolder;
+        color:#f54b83;
+        margin-bottom: 1.1rem;
+    }
+
+    .card-info p{
+        font-family: var(--font-secundary);
+        color:#eee;
+        font-weight:bolder;
+        width: 80%;
+        margin-bottom:1.2rem
+    }
+
+    .card-info button{
+        width: 8rem;
+        height: 2.5rem;
+        background: #8e2de2; 
+        background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0); 
+        background: linear-gradient(to left, #8e2de2, #4a00e0);
+        font-family:var(--font-action);
+        font-size:.8rem;
+        color:#eee;
+        border-radius: .5rem;
+        border:none;
+        box-shadow:0.1rem .2rem rgba(0, 0, 0, 0.3);
+        cursor:pointer;
+    }
+
+    .cards:hover .card-info{
+        bottom:2rem;
+        opacity: 1;
+        visibility:visible;
+    }
+ /* formulário*/
+
+
+
+
+
 
 
