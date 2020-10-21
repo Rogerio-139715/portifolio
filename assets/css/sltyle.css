@@ -431,7 +431,7 @@ header{
  .sessao-contato{
      width: 100%;
      height: 100vh;
-     background-color:#313030;
+     background-color:#353434;
      display:flex;
      align-items: center;
      justify-content: center;
@@ -460,11 +460,12 @@ header{
      padding:1rem 3rem 3rem 3rem;
  }
 
+
  .sessao-contato h1{
      font-family: var(--font-primary);
-     color:#272727;
+     color:#683681;
      font-size: 3rem;
-     font-weight:lighter;
+     font-weight: lighter;
  }
 
  .sessao-contato form{
@@ -484,6 +485,9 @@ header{
      border: none;
      width: 20rem;
      font-family: var(--font-secundary);
+     font-weight: 500;
+     font-size: 1rem;
+     text-shadow: 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
      border-bottom: .2rem dashed #636363;
      height: 3rem;
      outline:none ;
@@ -499,8 +503,9 @@ header{
  .field-label {
      position:absolute;
      left:0;
-     top:2.1rem;
      font-size: 1.2rem;
+     font-weight: 700;
+     color:#646461;
      font-family: var(--font-secundary) ;
      text-transform: uppercase;
      transition: all ease-in-out .4s;
@@ -509,6 +514,7 @@ header{
  .field:focus ~ label {
      top:0;
      font-size: 1rem;
+     
 
  }
  .field:focus  {
