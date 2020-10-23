@@ -42,8 +42,12 @@ Ajustes no button ,efeito hover...
 
 ## footer
  - :package: finalizdo ok
- - :bolt: ok
+ - :zap: ok
  - :package: finalizada parte vizual
  - :chart_with_upwards_trend: falta parte JS
+
+ ## js 
+
+ - :package: finalizado JS
 
  
