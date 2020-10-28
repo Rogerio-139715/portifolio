@@ -50,4 +50,8 @@ Ajustes no button ,efeito hover...
 
  - :package: finalizado JS
 
+ ## Responsivo mobile
+
+ - :package: finalizado
+
  
