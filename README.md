@@ -54,4 +54,10 @@ Ajustes no button ,efeito hover...
 
  - :package: finalizado
 
+ ## responsivo e scrolltop fadeIn/fadeOut finish
+
+ _ :package: front end ok
+
+ 
+
  

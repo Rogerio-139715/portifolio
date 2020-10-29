@@ -32,3 +32,21 @@ function atualizarPreco() {
 
    document.querySelector("#preco").innerHTML = `R$ ${preco.toFixed(2)}`
 }
+
+$(document).ready(function(){
+        
+   $(window).scroll(function(){
+     if($(this).scrollTop() > 200){
+         $('#topBtn').fadeIn(); 
+     } else{
+       $('#topBtn').fadeOut();
+     }
+   });
+
+
+  $("topBtn").click(function() {
+
+  $('html ,body').animate({scrollTop : 0}, 800);
+    
+  });
+});
