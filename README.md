@@ -58,6 +58,10 @@ Ajustes no button ,efeito hover...
 
  _ :package: front end ok
 
- 
+ ## RESPONSIVO TERMINADO
+ - :package: finalizada responsividade para dispositivos menonres (ajustar versões anteriores ios 6)
+ - :checkered_flag: ajustado scroll button to top faiden na home page .
+ - :construction: preparando para subir a pag.
+
 
  

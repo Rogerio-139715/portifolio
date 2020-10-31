@@ -8,11 +8,14 @@
 
 *{
     
-    margin:0;
-    padding:0;
     list-style: none;
     text-decoration: none;
     
+}
+html, body{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 
 :root{
@@ -21,9 +24,6 @@
     --font-action: "Mulish" , serif;
 }
 
-html{
-    scroll-behavior: smooth;
-}
 
 
 .hamburguer{
@@ -127,28 +127,28 @@ header{
 
 .banner {
     position: absolute;
-    top:30%;
+    top:20%;
     left:15%;
 }
 
 .banner h1 {
-    color:#ffff;
-    font-size: 3.5rem;
-    font-family:var(--font-primary) ;
+    color: #ffff;
+    font-size: 2.2rem;
+    font-family: var(--font-primary);
     font-weight: 200;
-    text-shadow:0.2rem 0.4rem 3px rgba(0, 0, 0, 0.4);
+    text-shadow: 0.2rem 0.4rem 3px rgba(0, 0, 0, 0.4);
     line-height: 3.5rem;
-    margin-bottom:2rem;
+    margin-bottom: 2rem;
     opacity: 0;
-    animation: moveBanner 1s  0.5s forwards;
+    animation: moveBanner 1s 0.5s forwards;
 }
 
 .banner p{
     font-family: var(--font-secundary);
     color:#ffff;
-    font-size:2.5rem;
+    font-size:2.3rem;
     text-shadow:0.2rem 0.4rem 3px rgba(0, 0, 0, 0.4);
-    margin-bottom:2rem;
+    margin-bottom:1.5rem;
     opacity: 0;
     animation: moveBanner 1s  0.7s forwards;
 }
@@ -267,7 +267,7 @@ header{
      display:grid;
      grid-template-columns: repeat(16, 1fr);
      grid-template-rows: repeat(6, 6rem);
-     row-gap:.6rem;
+     row-gap:2rem;
  }
 
  .conhecimento:nth-child(1){
@@ -444,7 +444,7 @@ header{
 
  .sessao-contato{
      width: 100%;
-     height: 100vh;
+     height: 100%;
      background-color:#353434;
      display:flex;
      align-items: center;
@@ -455,9 +455,11 @@ header{
 
  .contato-wrapper{
      width: 60%;
-     height:30rem;
+     height:98%;
      display: flex;
-     box-shadow:0 2rem 5rem rgba(0, 0, 0, 0.5)
+     box-shadow:0 2rem 5rem rgba(0, 0, 0, 0.5);
+     margin:.2rem 0  .3rem  0;
+
  }
 
  .contato-left{
@@ -536,7 +538,7 @@ header{
 .btn-submit{
     font-size: 1.2rem;
     text-transform: uppercase;
-    width: 90%;
+    width: 80%;
     height: 1.91rem;
     margin-top: .3rem;
     
@@ -546,7 +548,7 @@ header{
 
  .sessao-orcamento{
     width: 100%;
-    height: 100vh; 
+    height: 100%; 
     background: url(../../images/orc2.jpg) no-repeat ;
     object-fit: cover;
     display: flex;
@@ -662,24 +664,44 @@ header{
         display:flex;
     }
 
-    #topBtn{
+    .scrollToTop {
         position:fixed;
-        right: 3rem;
+        right: 3.2rem;
         bottom: 5.5rem;
         width: 3rem;
         height: 3rem; 
         background: #8e2de2; 
         background: -webkit-linear-gradient(to right, #8e2de2, #4a00e0); 
         background: linear-gradient(to bottom, #8e2de2, #4a00e0);
-        display:inline-flex  ;
+        display:flex ;
         justify-content: center;
         align-items:center;
         color:#fff;
         border-radius: .6rem;
         box-shadow: 0 0.2rem 0.6rem #00000008;
+        display: none;
         
+     }
+
+     .scrollToTop:hover{
+        width: 3.1rem;
+        height: 3.1rem;
+        background: #8e2de2; 
+    background: -webkit-linear-gradient(to top, #8e2de2, #4a00e0); 
+    background: linear-gradient(to left, #8e2de2, #4a00e0);
+
+     }
+
+     #topBtn-seta {
+         font-size:1.2rem;
+         display: flex;
+         justify-content: center;
+         margin-top: 1.1rem;
+     }
+     
         
-    }
+     
+
 
     /* RESPONSIVO PARA TABLETS */
 
@@ -741,18 +763,18 @@ header{
       }
     .card-info {
         width:100%;
-        height:92%;
+        height:98%;
         opacity: 1;
         visibility: visible;
         position: absolute;
-        bottom:-.9rem;
-        padding: .6rem;
+        bottom:-.2rem;
+        padding: .8rem;
         text-shadow: 0.3rem 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
         transition: all ease-in-out .4s;
     }
     .card-info h2 {
         font-family: var(--font-primary);
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         font-weight: 500;
         color: #eee;
     }
@@ -761,7 +783,7 @@ header{
         color: #eee;
         font-weight: bolder;
         width: 70%;
-        margin-bottom: .6rem;
+        margin-bottom: .3rem;
         font-size:.8rem;
     }
     .card-info button {
@@ -773,33 +795,74 @@ header{
 
     .sessao-contato {
         width: 100%;
-        height: 100vh;
+        height: 100%;
         background-color: #201a25;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: .1rem;
     }
+
+    .contato-wrapper {
+        width: 70%;
+        height: 60%;
+        display: flex;
+        box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
+        margin: .3rem;
+    }
+    
     .contato-right {
         width: 88%;
         background-color: #eee;
         padding: 1rem 3rem 3rem 3rem;
     }
-    .contato-right {
-        width: 88%;
-        background-color: #eee;
-        padding: 1rem 3rem 3rem 3rem;
+    .sessao-contato h1 {
+        font-family: var(--font-primary);
+        color: #423e44;
+        font-size: 1.8rem;
+        font-weight: lighter;
     }
 
+    .field {
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-family: var(--font-secundary);
+    font-weight: 400;
+    font-size: 1rem;
+    text-shadow: 0rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
+    border-bottom: .2rem dashed #636363;
+    height: 3.2rem;
+    outline: none;
+    margin: 1rem 0;
+}
+.field-label {
+    position: absolute;
+    left: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #646461;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+    transition: all ease-in-out .4s;
+}
+.btn-submit {
+    font-size: 1rem;
+    text-transform: uppercase;
+    width: 85%;
+    height: 1.91rem;
+    margin-top: .3rem;
+}
+    
     /* ORÇAMENTO */
     .orcamento-wrapper {
         width: 90%;
-        height: 70%;
+        height: 86%;
         background-color: #ffffff99;
         border-radius: 10px;
         box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
         position: relative;
-        margin-top: 5.6rem;
+        margin: 2.3rem 0  .5rem 0;
     }
     
     .sessao-orcamento h1 {
@@ -834,7 +897,7 @@ header{
         margin-top: 1.5rem;
     }
 
-    #topBtn{
+    .scrollToTop{
         display:none;
         opacity: 0;
     }
@@ -932,11 +995,11 @@ header{
     
     .banner h1 {
         color: #ffff;
-        font-size: 3.8rem;
+        font-size: 2.8rem;
         font-family: var(--font-primary);
         font-weight: 200;
         text-shadow: 0.2rem 0.4rem 3px rgba(0, 0, 0, 0.4);
-        line-height: 4.5rem;
+        line-height: 4.2rem;
         margin-bottom: 1.6rem;
         opacity: 0;
         animation: moveBanner 1s 0.5s forwards;
@@ -945,7 +1008,7 @@ header{
     .banner p {
         font-family: var(--font-secundary);
         color: #ffff;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         text-shadow: 0.2rem 0.4rem 3px rgba(0, 0, 0, 0.4);
         margin-bottom: 2rem;
         opacity: 0;
@@ -955,7 +1018,7 @@ header{
         font-family: var(--font-action);
         color: #a293e5;
         text-transform: uppercase;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         letter-spacing: .6px;
         font-weight: 600;
         box-shadow: 0px -1px 3px 0px #6539ac;
@@ -968,7 +1031,7 @@ header{
         border: none;
         opacity: 0;
         animation: moveBanner 1s 0.8s forwards;
-        margin-top: 3.1rem;
+        margin-top: 2.7rem;
     }
 
     /* CONHECIMENTOS */
@@ -1071,18 +1134,27 @@ header{
 }
 .contato-wrapper {
     width:98%;
-    height: 37rem;
+    height: 98%;
     display: flex;
     box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.5);
 }
+
+.contato-left{
+     display: none;
+     
+}
+
 .contato-right {
     width: 73%;
     background-color: #eee;
     padding: 1rem 3rem 3rem 3rem;
     border-radius: .2rem;
 }
-.contato-left{
-    display: none;
+.sessao-contato h1 {
+    font-family: var(--font-primary);
+    color: #423e44;
+    font-size: 1.8rem;
+    font-weight: lighter;
 }
 
 .sessao-contato form {
@@ -1134,6 +1206,7 @@ header{
     box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
     position: relative;
     margin-top: 3.6rem;
+    margin-bottom: .1rem;
 }
 
 /* FOOTER */
@@ -1149,6 +1222,7 @@ footer {
 }
 .footer-content {
     width: 98vw;
+    height:100%;
     display: flex;
     flex:1;
     flex-direction: column-reverse;
@@ -1163,13 +1237,13 @@ footer {
     text-shadow: -9px 0rem 1rem 0.3rem rgba(0, 0, 0, 0.5);
     margin-left:1rem;
     letter-spacing: .1rem;
-    margin-top:1.9rem;
+    margin-top:1.2rem;
     letter-spacing: .1rem;
 }
 
 /* SCROLL ON TOP */
 
-#topBtn {
+.scrollToTop {
    display:none;
    opacity: 0;
 }

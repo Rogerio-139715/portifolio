@@ -1,6 +1,10 @@
+// FUNCTION CLICK EVENT
+
 var hamburguer = document.querySelector(".hamburguer").addEventListener("click", () =>
    document.querySelector(".container").classList.toggle("show-menu")
 );
+
+// SESSÃO ORÇAMENTO
 
 document.querySelector("#qtde").addEventListener("change", atualizarPreco);
 document.querySelector("#js").addEventListener("change", atualizarPreco);
@@ -11,7 +15,7 @@ document.querySelector("#prazo").addEventListener("change", function () {
 
    const prazo = document.querySelector("#prazo").value
    if (prazo > 1) {
-      document.querySelector("label[for=prazo]").innerHTML = `prazo: ${prazo} semanas`
+      document.querySelector("label[for=prazo]").innerHTML = `prazo: ${prazo} semanas` // CONDIÇÃO PARA AJUSTAS CONCORDÂNCIA VERBAL
    } else {
       document.querySelector("label[for=prazo]").innerHTML = `prazo: ${prazo} semana`
    }
@@ -32,15 +36,17 @@ function atualizarPreco() {
 
    document.querySelector("#preco").innerHTML = `R$ ${preco.toFixed(2)}`
 }
-
+// J-QUERY FUNCTION
+/*
 $(document).ready(function(){
         
    $(window).scroll(function(){
-     if($(this).scrollTop() > 200){
+     if($(this).scrollTop() > 60){
          $('#topBtn').fadeIn(); 
      } else{
        $('#topBtn').fadeOut();
      }
+     
    });
 
 
@@ -49,4 +55,27 @@ $(document).ready(function(){
   $('html ,body').animate({scrollTop : 0}, 800);
     
   });
+  
 });
+ */
+
+ $(document).ready(function() {
+
+    // SHOW HIDE BUTTON ON SCROLL
+    $(window).scroll(function() {
+       if($(this).scrollTop() > 150){
+          $('.scrollToTop').fadeIn();
+       } else {
+          $('.scrollToTop').fadeOut();
+       }
+    });
+
+     //SMOOTH SCROLLING TO TOP
+     $('.scrollToTop').click(function(){
+       $('html,body').animate({scrollTop: 0}, 1200)
+     })
+
+ });
+
+
+
