@@ -72,7 +72,7 @@ $(document).ready(function(){
 
      //SMOOTH SCROLLING TO TOP
      $('.scrollToTop').click(function(){
-       $('html,body').animate({scrollTop: 0}, 1200)
+       $('html,body').animate({scrollTop: 0}, 300)
      })
 
  });
